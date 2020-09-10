@@ -1,1 +1,10 @@
-{{ busStops }}
+{% for line in busStop1 %}
+    {% for bus in line %}
+			<li>{{ bus.line }} - {{ bus.direction }}</li>
+        {% endfor %}
+    {% endfor %}
+{% for line in busStop2 %}
+    {% for bus in line %}
+			<li>{{ bus.line }} - {{ bus.direction }}</li>
+        {% endfor %}
+    {% endfor %}
